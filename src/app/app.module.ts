@@ -3,14 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { RepositoryComponent } from './repository/repository.component';
+import { FormsModule } from '@angular/forms';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RepositoryComponent,
+    DropdownComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
